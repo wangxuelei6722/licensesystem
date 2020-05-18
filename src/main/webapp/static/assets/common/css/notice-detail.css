@@ -1,0 +1,48 @@
+/*表格头部以及默认样式重置*/
+.layui-card .layui-card-header {
+    padding-top: 5px;
+    box-sizing: border-box;
+}
+
+.layui-card .layui-card-header h3 {
+    font-size: 16px;
+    font-weight: 400;
+    color: #009688;
+    line-height: 30px;
+}
+
+.layui-card .layui-card-header .layui-btn {
+    height: 34px;
+    line-height: 34px;
+}
+
+.layui-card .layui-card-body .action-item {
+    margin-right: 5px;
+}
+
+/*\表格头部以及默认样式重置*/
+.notice-detail {
+    min-height: 500px;
+    position: relative;
+}
+
+.notice-detail .title-box {
+    margin-top: 27px;
+}
+
+.notice-detail .title-box .notice-title {
+    text-align: center;
+    font-size: 22px;
+    color: #464646;
+}
+
+.notice-detail .title-box .notice-title .right-box {
+    font-size: 16px;
+}
+
+.notice-detail .main-content {
+    width: 940px;
+    margin: 50px auto;
+}
+
+/*# sourceMappingURL=notice-detail.css.map */

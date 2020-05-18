@@ -1,0 +1,63 @@
+/*表格头部以及默认样式重置*/
+.layui-card .layui-card-header {
+    padding-top: 5px;
+    box-sizing: border-box;
+}
+
+.layui-card .layui-card-header h3 {
+    font-size: 16px;
+    font-weight: 400;
+    color: #009688;
+    line-height: 30px;
+}
+
+.layui-card .layui-card-header .layui-btn {
+    height: 34px;
+    line-height: 34px;
+}
+
+.layui-card .layui-card-body .action-item {
+    margin-right: 5px;
+}
+
+/*\表格头部以及默认样式重置*/
+.search-form .layui-col-md1 {
+    margin-right: 10px;
+    width: 170px;
+}
+
+.isUsed-btn {
+    height: 26px;
+    line-height: 26px;
+    background: #fff;
+}
+
+.enabled-use-btn {
+    color: #1186f3;
+    border: 1px solid #1186f3;
+}
+
+.enabled-use-btn:hover {
+    color: #1186f3;
+}
+
+.disabled-use-btn {
+    color: #FF5722;
+    border: 1px solid #FF5722;
+}
+
+.disabled-use-btn:hover {
+    color: #FF5722;
+}
+
+.stop-use-btn {
+    border: 1px solid #dddddd;
+    background: #f0f0f0;
+    color: #464646;
+}
+
+.stop-use-btn:hover {
+    color: #464646;
+}
+
+/*# sourceMappingURL=manage.css.map */

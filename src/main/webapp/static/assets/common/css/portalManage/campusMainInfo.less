@@ -1,0 +1,46 @@
+@import url('../variables');
+/*表格头部以及默认样式重置*/
+.layui-card {
+  .layui-card-header {
+    padding-top: 5px;
+    box-sizing: border-box;
+
+    h3 {
+      font-size: 16px;
+      font-weight: 400;
+      color: @titleColor;
+      line-height: 30px;
+    }
+
+    .layui-btn {
+      height: @btnHeight;
+      line-height: @btnHeight;
+    }
+  }
+
+  .layui-card-body {
+    .info-box {
+      width: 1200px;
+      margin: 50px auto;
+      font-size: 14px;
+      color: #464646;
+
+      .info-item {
+        margin-bottom: 20px;
+
+        .name {
+          width: 100px;
+        }
+
+        &:first-child {
+          height: 38px;
+          line-height: 38px;
+        }
+      }
+
+      .btns-item {
+        padding-left: 100px;
+      }
+    }
+  }
+}

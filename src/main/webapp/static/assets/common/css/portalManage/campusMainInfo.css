@@ -1,0 +1,45 @@
+/*表格头部以及默认样式重置*/
+.layui-card .layui-card-header {
+    padding-top: 5px;
+    box-sizing: border-box;
+}
+
+.layui-card .layui-card-header h3 {
+    font-size: 16px;
+    font-weight: 400;
+    color: #009688;
+    line-height: 30px;
+}
+
+.layui-card .layui-card-header .layui-btn {
+    height: 34px;
+    line-height: 34px;
+}
+
+.layui-card .layui-card-body .info-box {
+    width: 1200px;
+    margin: 50px auto;
+    font-size: 14px;
+    color: #464646;
+}
+
+.layui-card .layui-card-body .info-box .info-item {
+    margin-bottom: 20px;
+}
+
+.layui-card .layui-card-body .info-box .info-item .name {
+    width: 100px;
+    text-align: right;
+    margin-right: 50px;
+}
+
+.layui-card .layui-card-body .info-box .info-item:first-child {
+    height: 38px;
+    line-height: 38px;
+}
+
+.layui-card .layui-card-body .info-box .btns-item {
+    padding-left: 150px;
+}
+
+/*# sourceMappingURL=campusMainInfo.css.map */

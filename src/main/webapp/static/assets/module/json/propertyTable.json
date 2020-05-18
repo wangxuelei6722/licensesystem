@@ -1,0 +1,29 @@
+{
+  "code": 0,
+  "msg": "",
+  "count": 1,
+  "data": [
+    {
+      "id": 1,
+      "year": "2017",
+      "instruNum": "1",
+      "range1": "0",
+      "range2": "1",
+      "range3": "0",
+      "range4": "0",
+      "range5": "0",
+      "totalSum": "23.50"
+    },
+    {
+      "id": 2,
+      "year": "2018",
+      "instruNum": "22",
+      "range1": "1",
+      "range2": "1",
+      "range3": "0",
+      "range4": "0",
+      "range5": "0",
+      "totalSum": "123.50"
+    }
+  ]
+}

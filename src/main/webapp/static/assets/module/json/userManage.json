@@ -1,0 +1,16 @@
+{
+  "code": 0,
+  "msg": "",
+  "count": 1,
+  "data": [
+    {
+      "id": 1,
+      "fullName": "易老师admin",
+      "userLoginName": "yilaosh",
+      "isPI": "是",
+      "belongUnit": "生科院",
+      "userRole": "仪器管理员",
+      "userStatus": "通过审核"
+    }
+  ]
+}

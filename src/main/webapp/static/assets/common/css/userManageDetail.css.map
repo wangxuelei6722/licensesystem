@@ -1,0 +1,9 @@
+{
+  "version": 3,
+  "sources": [
+    "userManageDetail.less"
+  ],
+  "names": [],
+  "mappings": ";AAEA,WACE;EACE,gBAAA;EACA,sBAAA;;AAHJ,WACE,mBAGE;EACE,eAAA;EACA,gBAAA;EACA,cAAA;EACA,iBAAA;;AARN,WACE,mBASE;EACE,YAAA;EACA,iBAAA;;AAZN,WAeE,iBACE;EACE,iBAAA;;AAIN;EACE,2BAAA;EACA,cAAA;EACA,eAAA;;AAHF,WAIE;EACE,mBAAA;;AALJ,WAIE,aAEE;EACE,qBAAA;EACA,gBAAA;EACA,YAAA",
+  "file": "userManageDetail.css"
+}

@@ -1,0 +1,17 @@
+{
+  "code": 0,
+  "msg": "",
+  "count": 1,
+  "data": [
+    {
+      "id": 1,
+      "instruName": "透射电子显微镜",
+      "appointPerson": "系统",
+      "researchGroup": "尚未设置",
+      "timePeriod": "1018-05-28 06:00 - 2018-05-28 06:30",
+      "useModel": "培训预约",
+      "appointStatus": "预约有效",
+      "createTime": "2018-01-01 00:00:00"
+    }
+  ]
+}

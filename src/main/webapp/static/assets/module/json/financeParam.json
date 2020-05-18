@@ -1,0 +1,14 @@
+{
+  "code": 0,
+  "msg": "",
+  "count": 1,
+  "data": [
+    {
+      "id": 1,
+      "name": "生科院",
+      "unitPath": "校内&gt;医学部&gt;生科院",
+      "createPerson": "系统",
+      "createTime": "2019-04-10 20:00"
+    }
+  ]
+}

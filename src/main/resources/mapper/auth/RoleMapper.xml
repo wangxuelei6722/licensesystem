@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wangxl.licensesystem.dao.RoleDao">
+    <resultMap type="com.wangxl.licensesystem.pojo.Role" id="resultMap">
+        <id property="id"  column="id"></id>
+
+
+		<!-- 为管理员的集合赋值 -->
+		<association property="usersList" column="usersList" javaType="com.wangxl.licensesystem.pojo.Users"
+					 select="com.wangxl.licensesystem.dao.UsersDao.findOneById"/>
+    </resultMap>
+    <!-- 保存一条管理员
+		保存的时候将主键设置到id上
+	 -->
+    <insert id="save" parameterType="com.wangxl.licensesystem.pojo.Role"
+            useGeneratedKeys="true" keyProperty="id" keyColumn="id">
+		insert into role
+		(createId,updateId,name,content,code,status,level,remark,createTime,updateTime,pubTime)
+		values
+		(#{createId},#{updateId},#{name},#{content},#{code},#{status},#{level},#{remark},#{createTime},#{updateTime},#{pubTime})
+
+	</insert>
+	<!--更新一条记录-->
+	<update id="update" parameterType="com.wangxl.licensesystem.pojo.Role">
+		update role
+		<set>
+			<if test="createId != null">
+				createId = #{createId},
+			</if>
+			<if test="updateId != null">
+				updateId = #{updateId},
+			</if>
+			<if test="name != null">
+				name = #{name},
+			</if>
+			<if test="content != null">
+				content = #{content},
+			</if>
+			<if test="code != null">
+				code = #{code},
+			</if>
+			<if test="status != null">
+				status = #{status},
+			</if>
+			<if test="level != null">
+				level = #{level},
+			</if>
+			<if test="remark != null">
+				remark = #{remark},
+			</if>
+			<if test="createTime != null">
+				createTime = #{createTime},
+			</if>
+			<if test="updateTime != null">
+				updateTime = #{updateTime},
+			</if>
+			<if test="pubTime != null">
+				pubTime = #{pubTime},
+			</if>
+		</set>
+		<where>
+			id = #{id}
+		</where>
+	</update>
+	<!-- 更新多条记录 -->
+	<update id="updateBatch" parameterType="map"></update>
+	<!--
+		id:唯一,必须和dao中的方法名称一样
+		parameterType:必须和dao中的方法中的参数类型一样
+		resultType:必须和方法中的返回值一样(查询单条的),查询多条,必须和返回值(List)中的泛型一致
+	 -->
+	<select id="findOne" parameterType="map" resultMap="resultMap">
+		select * from role
+		<where>
+			<choose>
+				<when test="id != null">
+					id = #{id}
+				</when>
+			</choose>
+		</where>
+		limit 1 ;
+	</select>
+	<!-- 查询多条记录 -->
+	<select id="findList" parameterType="map" resultMap="resultMap">
+		select * from role
+		<!-- 搜索的功能 -->
+		<where>
+			<!-- 关键字搜索 -->
+			<if test="keyword != null and keyword != ''">
+				and (name like #{keyword} or content like #{keyword} )
+			</if>
+			<!-- 状态搜索 -->
+			<if test="status != null">
+				and status = #{status}
+			</if>
+			<!-- 时间 -->
+			<if test="stDate != null and edDate != null">
+				<![CDATA[
+					and createTime >= #{stDate} and createTime < #{edDate}
+				]]>
+			</if>
+		</where>
+		<!-- 排序
+			如果木有指定排序,按照默认排序
+		 -->
+		<choose>
+			<when test="orderby == 'createTimeASC'">
+				order by createTime asc
+			</when>
+			<otherwise>
+				order by updateTime desc
+			</otherwise>
+		</choose>
+	</select>
+	<!-- 按照id查询 -->
+	<!-- 按照id查询 -->
+	<select id="selectById" resultType="com.wangxl.licensesystem.pojo.Role">
+		select * from role where id = #{id}
+	</select>
+	<!-- 删除一条记录 -->
+	<delete id="delete" parameterType="map">
+		delete from role
+		<where>
+			<choose>
+				<when test="id != null">
+					id = #{id}
+				</when>
+				<!-- 不加other,有将数据库表中的记录全部删除的风险 -->
+				<otherwise>
+					id = #{id}
+				</otherwise>
+			</choose>
+		</where>
+	</delete>
+
+
+</mapper>

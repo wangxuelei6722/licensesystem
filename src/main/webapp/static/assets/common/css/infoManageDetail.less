@@ -1,0 +1,54 @@
+@import url('variables');
+/*表格头部以及默认样式重置*/
+.layui-card {
+  .layui-card-header {
+    padding-top: 5px;
+    box-sizing: border-box;
+
+    h3 {
+      font-size: 16px;
+      font-weight: 400;
+      color: @titleColor;
+      line-height: 30px;
+    }
+
+    .layui-btn {
+      height: @btnHeight;
+      line-height: @btnHeight;
+    }
+  }
+
+  .layui-card-body {
+    .action-item {
+      margin-right: 5px;
+    }
+  }
+}
+
+//.layui-tab-content{
+//  min-height: 600px;
+//  height: auto;
+//}
+.detail-box {
+  padding: 60px 300px 0 300px;
+  color: #212121;
+  font-size: 14px;
+
+  .detail-item {
+    margin-bottom: 10px;
+
+    .name {
+      display: inline-block;
+      text-align: right;
+      width: 200px;
+      margin-right: 60px;
+    }
+  }
+}
+
+.finish-box {
+  .detail-item {
+    height: 34px;
+    line-height: 34px;
+  }
+}

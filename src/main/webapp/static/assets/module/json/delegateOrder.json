@@ -1,0 +1,51 @@
+{
+  "code": 0,
+  "msg": "",
+  "count": 1,
+  "data": [
+    {
+      "id": 1,
+      "instruName": "质谱仪",
+      "sampleName": "测试",
+      "sampleNum": "12",
+      "sampleTime": "1018-05-28 06:00",
+      "appointPerson": "mengbin",
+      "auditStatus": "0",
+      "executeStatus": "0",
+      "createTime": "2019-01-22 14:48:49"
+    },
+    {
+      "id": 2,
+      "instruName": "质谱仪",
+      "sampleName": "测试",
+      "sampleNum": "12",
+      "sampleTime": "1018-05-28 06:00",
+      "appointPerson": "mengbin",
+      "auditStatus": "1",
+      "executeStatus": "0",
+      "createTime": "2019-01-22 14:48:49"
+    },
+    {
+      "id": 3,
+      "instruName": "质谱仪",
+      "sampleName": "测试",
+      "sampleNum": "12",
+      "sampleTime": "1018-05-28 06:00",
+      "appointPerson": "mengbin",
+      "auditStatus": "1",
+      "executeStatus": "-1",
+      "createTime": "2019-01-22 14:48:49"
+    },
+    {
+      "id": 4,
+      "instruName": "质谱仪",
+      "sampleName": "测试",
+      "sampleNum": "12",
+      "sampleTime": "1018-05-28 06:00",
+      "appointPerson": "mengbin",
+      "auditStatus": "-1",
+      "executeStatus": "0",
+      "createTime": "2019-01-22 14:48:49"
+    }
+  ]
+}

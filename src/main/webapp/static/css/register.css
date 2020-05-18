@@ -1,0 +1,147 @@
+.easy-top {
+    width: 100%;
+    height: 108px;
+    background: #F9F9F9;
+    border-bottom: 1px solid #CBCBCB;
+}
+
+.easy-top .register-tip,
+.easy-top .login-tip {
+    height: 17px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #464646;
+    margin-top: 40px;
+}
+
+.easy-top .register-tip a,
+.easy-top .login-tip a {
+    color: #3699FF;
+}
+
+.easy-top a {
+    margin-top: 22px;
+}
+
+.main-container {
+    margin-top: 5px;
+}
+
+.main-container .title-box {
+    height: 100px;
+    border-bottom: 1px solid #CBCBCB;
+}
+
+.main-container .title-box .title {
+    box-sizing: border-box;
+    text-align: center;
+    width: 100%;
+    height: 100px;
+    font-size: 16px;
+    border-bottom: 3px solid #3699FF;
+    font-weight: bold;
+    line-height: 50px;
+}
+
+.main-container .form-box {
+    position: relative;
+}
+
+.main-container .form-box .register-form,
+.main-container .form-box .login-form {
+    position: absolute;
+    left: 60%;
+    transform: translate(-50%);
+    margin-top: 100px;
+    width: 600px;
+}
+
+.main-container .form-box .register-form .form-group label,
+.main-container .form-box .login-form .form-group label {
+    padding: 6px 0 0 0;
+    font-size: 13px;
+    width: 76px;
+    margin-right: 10px;
+    text-align: justify;
+    text-align-last: justify;
+}
+
+.main-container .form-box .register-form .form-group .dropdown-panel select,
+.main-container .form-box .login-form .form-group .dropdown-panel select {
+    width: 104px;
+    height: 32px;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    -ms-appearance: none;
+    background-size: 10%;
+    font-size: 12px;
+    font-family: Microsoft YaHei;
+    color: #464646;
+    outline: none;
+    border: 1px solid #CBCBCB;
+    padding-left: 9px;
+    background: url("../../images/arrow.png") no-repeat 76px center;
+}
+
+.main-container .form-box .register-form .form-group .dropdown-panel select::-ms-expand,
+.main-container .form-box .login-form .form-group .dropdown-panel select::-ms-expand {
+    display: none;
+}
+
+.main-container .form-box .register-form .form-group .other-login-box,
+.main-container .form-box .login-form .form-group .other-login-box {
+    padding-left: 75px;
+    margin-top: 10px;
+}
+
+.main-container .form-box .register-form .form-group .other-login-box .other-login,
+.main-container .form-box .login-form .form-group .other-login-box .other-login {
+    font-size: 14px;
+    line-height: 27px;
+    color: #464646;
+    width: 225px;
+}
+
+.main-container .form-box .register-form .form-group .forget-password,
+.main-container .form-box .login-form .form-group .forget-password {
+    float: right;
+    color: #198AFE;
+}
+
+.main-container .form-box .register-form .form-group .submit-btn,
+.main-container .form-box .login-form .form-group .submit-btn {
+    width: 240px;
+    height: 46px;
+    font-size: 16px;
+    text-align: center;
+    border-radius: 0;
+    background: #3699FF;
+    color: #fff;
+    margin-left: 75px;
+    margin-top: 30px;
+}
+
+/*.main-container .form-box .register-form .form-group .login-submit,*/
+/*.main-container .form-box .login-form .form-group .login-submit {*/
+/*margin-top: 105px;*/
+/*}*/
+.main-container .form-box .register-form .form-group .input-panel,
+.main-container .form-box .login-form .form-group .input-panel {
+    width: 232px;
+}
+
+.main-container .form-box .register-form .form-group input,
+.main-container .form-box .login-form .form-group input {
+    width: 232px;
+    height: 32px;
+    border: 1px solid #cbcbcb;
+    border-radius: 2px;
+    font-size: 12px;
+}
+
+span#login-span {
+    color: #3699FF;
+}
+
+/*# sourceMappingURL=register.css.map */

@@ -1,0 +1,15 @@
+{
+  "code": 0,
+  "msg": "",
+  "count": 1,
+  "data": [
+    {
+      "id": 1,
+      "consumInstru": "其他物品",
+      "price": "100.00",
+      "unit": "个",
+      "createPerson": "系统",
+      "createTime": "2019-01-22 14:48:49"
+    }
+  ]
+}

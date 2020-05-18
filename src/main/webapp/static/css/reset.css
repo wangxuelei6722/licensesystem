@@ -1,0 +1,47 @@
+a {
+    text-decoration: none;
+    color: #666666;
+    word-wrap: break-word;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.pull-left,
+.pull-right {
+    margin: 0;
+}
+
+i,
+em {
+    font-style: normal;
+}
+
+ul,
+li {
+    list-style: none;
+    padding-left: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+    color: #3699FF;
+}
+
+label,
+summary {
+    cursor: default;
+}
+
+.rank-appoint .top-three .pull-left {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}

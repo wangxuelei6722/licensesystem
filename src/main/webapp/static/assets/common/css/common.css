@@ -1,0 +1,42 @@
+
+.pull-left {
+    float: left;
+}
+
+.pull-right {
+    float: right;
+}
+
+.clearfix {
+    display: block;
+    content: "";
+    clear: both;
+    overflow: hidden;
+}
+
+/*!*错误提示信息*!*/
+.red-bordered {
+    border: 1px solid red !important;
+}
+
+.red-bordered::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color: red;
+    font-size: 12px;
+}
+
+.red-bordered:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: red;
+    font-size: 12px;
+}
+
+.red-bordered::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: red;
+    font-size: 12px;
+}
+
+.red-bordered:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: red;
+    font-size: 12px;
+}
+
+/*\错误提示信息*/

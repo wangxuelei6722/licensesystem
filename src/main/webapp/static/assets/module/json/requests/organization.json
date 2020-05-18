@@ -1,0 +1,65 @@
+{
+  "code": 0,
+  "status": 200,
+  "data": [
+    {
+      "id": 1,
+      "name": "校内（校层级）",
+      "open": true,
+      "isParent": true,
+      "children": [
+        {
+          "id": 2,
+          "pid": 1,
+          "name": "医学部（院层级）",
+          "isParent": true,
+          "open": true,
+          "children": [
+            {
+              "id": 3,
+              "pid": 2,
+              "open": true,
+              "name": "A(系层级)"
+            },
+            {
+              "id": 4,
+              "pid": 2,
+              "open": true,
+              "name": "B"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "校外",
+      "open": true,
+      "isParent": true,
+      "children": [
+        {
+          "id": 6,
+          "pid": 5,
+          "name": "医学部（院层级）",
+          "isParent": true,
+          "open": true,
+          "children": [
+            {
+              "id": 7,
+              "pid": 5,
+              "open": true,
+              "name": "A1(系层级)"
+            },
+            {
+              "id": 8,
+              "pid": 5,
+              "open": true,
+              "name": "B1"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "msg": "数据获取成功"
+}

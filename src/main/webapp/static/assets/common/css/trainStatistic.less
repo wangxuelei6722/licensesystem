@@ -1,0 +1,79 @@
+@import url('variables');
+/*表格头部以及默认样式重置*/
+.layui-card {
+  .layui-card-header {
+    padding-top: 5px;
+    box-sizing: border-box;
+
+    h3 {
+      font-size: 16px;
+      font-weight: 400;
+      color: @titleColor;
+      line-height: 30px;
+    }
+
+    .layui-btn {
+      height: @btnHeight;
+      line-height: @btnHeight;
+    }
+  }
+
+  .layui-card-body {
+    .action-item {
+      margin-right: 5px;
+    }
+  }
+}
+
+.statistic-box {
+  .content-item {
+    .layui-card {
+      .card-title {
+        font-size: 20px;
+        font-family: MicrosoftYaHei;
+        font-weight: 400;
+        color: rgba(70, 70, 70, 1);
+        line-height: 66px;
+        text-align: center;
+        height: 66px;
+        clear: both;
+      }
+    }
+  }
+}
+
+/*机时下面所对应的统计图表*/
+.train-box {
+  .search-box {
+    .show-info {
+      padding-left: 50px;
+    }
+
+    .search-options {
+      padding-left: 280px;
+
+      .layui-form {
+        margin-top: 10px;
+        margin-bottom: 10px;
+
+        .layui-col-md2 {
+          margin-right: 10px;
+        }
+
+        .btn-box {
+          width: 100px;
+        }
+      }
+    }
+  }
+
+  .trainStatistic, .propertyStatistic, .groupCompreStatistic {
+    padding-left: 20px;
+    margin: 0 auto;
+  }
+}
+
+#trainEchart1, #trainEchart2, #propertyEchart, #groupCompreEchart {
+  width: 92vw;
+}
+

@@ -1,0 +1,167 @@
+/*top-panel*/
+body {
+    font-size: 12px;
+}
+
+.console-top-panel {
+    background: #FBFBFB;
+    color: #666666;
+}
+
+.console-top-panel .panel-item {
+    border-right: 1px solid #E5E5E5;
+    padding-left: 36px;
+}
+
+.console-top-panel .panel-item:last-child {
+    border-right: 0;
+}
+
+.console-top-panel .panel-item .left-name i {
+    font-size: 14px;
+    color: #C4C1C1;;
+}
+
+.console-top-panel .right-txt {
+    color: #C4C1C1;
+}
+
+/*\top-panel*/
+
+.manage-views-box {
+    margin-top: 36px;
+}
+
+.manage-views-box .manage-views .manage-item {
+    width: 267px;
+    height: 102px;
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 1px 2px 4px 0px rgba(52, 56, 60, 0.13);
+    border-radius: 6px;
+    margin-right: 8px;
+    margin-bottom: 8px;
+}
+
+.manage-views-box .manage-views .manage-item .left-icon-box {
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    float: left;
+    width: 100px;
+    height: 100%;
+    overflow: hidden;
+    line-height: 102px;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+}
+
+.manage-views-box .manage-views .manage-item:nth-child(1) .left-icon-box {
+    background: #F6636C;
+}
+
+.manage-views-box .manage-views .manage-item:nth-child(2) .left-icon-box {
+    background: #FDDF8D;
+}
+
+.manage-views-box .manage-views .manage-item:nth-child(3) .left-icon-box {
+    background: #56BDCA;
+}
+
+.manage-views-box .manage-views .manage-item:nth-child(4) .left-icon-box {
+    background: #5BC0DE;
+}
+
+.manage-views-box .manage-views .manage-item:nth-child(5) .left-icon-box {
+    background: #3CC051;
+}
+
+.manage-views-box .manage-views .manage-item:nth-child(6) .left-icon-box {
+    background: #FCB322;
+}
+
+.manage-views-box .manage-views .manage-item .left-icon-box i {
+    font-size: 54px;
+}
+
+.manage-views-box .manage-views .manage-item .right-info-box {
+    width: 167px;
+    padding: 20px 0;
+    float: left;
+}
+
+.manage-views-box .manage-views .manage-item .right-info-box .number {
+    font-size: 36px;
+    font-family: ArialMT;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.manage-views-box .manage-views .manage-item .right-info-box .desc {
+    font-size: 12px;
+    text-align: center;
+    color: #6B6B6B;
+}
+
+.manage-views-box .manage-views .manage-item:last-child {
+    margin-right: 0;
+}
+
+
+.main-container {
+    margin-top: 58px;
+}
+
+.main-container .layui-card {
+    border-radius: 6px;
+}
+
+.main-container .layui-card-header {
+    position: relative;
+    padding: 0 15px;
+    border-bottom: 1px solid #f6f6f6;
+    color: #333;
+    font-size: 14px;
+    height: 35px;
+    line-height: 35px;
+    background: rgba(251, 251, 251, 1);
+    /* border: 1px solid rgba(229,229,229,1); */
+    border-radius: 6px 6px 0px 0px;
+}
+
+.main-container .layui-card-header .left-title {
+    float: left;
+}
+
+.main-container .layui-card-header .right-more {
+    float: right;
+}
+
+.main-container .layui-card-body .content-panel {
+    height: 300px;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.main-container .layui-card-body .content-panel li {
+    height: 50px;
+    line-height: 50px;
+}
+
+.main-container .layui-card-body .content-panel a {
+    font-size: 14px;
+    dispaly: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 650px;
+}
+
+.main-container .layui-card-body .content-panel span {
+    color: #C4C1C1;
+    font-size: 12px;
+}
+
+.system-notice a {
+    color: #077CF9;
+}

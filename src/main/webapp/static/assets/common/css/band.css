@@ -1,0 +1,23 @@
+.layui-tab-item:last-child .detail-box:first-child {
+    padding: 0;
+}
+
+.layui-tab-item:last-child .detail-box:first-child .search-btn {
+    margin-top: 10px;
+    margin-left: 5px;
+}
+
+.layui-tab-item:last-child .book-order-status .name,
+.layui-tab-item:last-child .realPay .name {
+    height: 34px;
+    line-height: 34px;
+}
+
+.layui-tab-item:last-child .book-order-status .btn-group,
+.layui-tab-item:last-child .realPay .btn-group {
+    padding-left: 210px;
+    width: 260px;
+    margin-top: 50px;
+}
+
+/*# sourceMappingURL=band.css.map */

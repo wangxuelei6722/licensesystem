@@ -1,0 +1,12 @@
+{
+  "code": 0,
+  "msg": "",
+  "count": 1,
+  "data": [
+    {
+      "id": 1,
+      "instruName": "质谱仪",
+      "instruNum": 100
+    }
+  ]
+}

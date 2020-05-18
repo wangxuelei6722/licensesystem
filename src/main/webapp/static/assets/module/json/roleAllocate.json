@@ -1,0 +1,23 @@
+{
+  "code": 0,
+  "msg": "",
+  "count": 1,
+  "data": [
+    {
+      "id": 1,
+      "mark": "150",
+      "name": "用户",
+      "belongUnit": "化学院",
+      "level": "子平台",
+      "isManager": 0
+    },
+    {
+      "id": 2,
+      "mark": "150",
+      "name": "仪器管理员",
+      "belongUnit": "化学院2",
+      "level": "子平台",
+      "isManager": 1
+    }
+  ]
+}

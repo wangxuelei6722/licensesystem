@@ -1,0 +1,118 @@
+/*表格头部以及默认样式重置*/
+.layui-card .layui-card-header {
+    padding-top: 5px;
+    box-sizing: border-box;
+}
+
+.layui-card .layui-card-header h3 {
+    font-size: 16px;
+    font-weight: 400;
+    color: #009688;
+    line-height: 30px;
+}
+
+.layui-card .layui-card-header .layui-btn {
+    height: 34px;
+    line-height: 34px;
+}
+
+.layui-card .layui-card-body .action-item {
+    margin-right: 5px;
+}
+
+.redBg {
+    background: #FF4747;
+}
+
+.yellowBg {
+    background: #FFC515;
+}
+
+.purpleBg {
+    background: #5D70E9;
+}
+
+.commonLabelBg {
+    background: #C8C8C8 !important;
+}
+
+.statistic-container .count-mode {
+    padding-left: 20px;
+}
+
+.statistic-container .count-mode .layui-col-md1 {
+    margin-right: 20px;
+    width: 76px;
+}
+
+.statistic-container .count-mode .layui-col-md1 .status-label {
+    width: 18px;
+    height: 12px;
+    margin-right: 10px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.statistic-box .content-item .layui-card .card-title {
+    font-size: 20px;
+    font-family: MicrosoftYaHei;
+    font-weight: 400;
+    color: #464646;
+    line-height: 66px;
+    text-align: center;
+    height: 66px;
+    clear: both;
+}
+
+/*机时下面所对应的统计图表*/
+.jishi-box .search-box .show-info,
+.cost-box .search-box .show-info,
+.subscribe-box .search-box .show-info {
+    padding-left: 50px;
+}
+
+.jishi-box .search-box .search-options,
+.cost-box .search-box .search-options,
+.subscribe-box .search-box .search-options {
+    padding-left: 80px;
+}
+
+.jishi-box .search-box .search-options .layui-form,
+.cost-box .search-box .search-options .layui-form,
+.subscribe-box .search-box .search-options .layui-form {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.jishi-box .search-box .search-options .layui-form .layui-col-md2,
+.cost-box .search-box .search-options .layui-form .layui-col-md2,
+.subscribe-box .search-box .search-options .layui-form .layui-col-md2 {
+    margin-right: 10px;
+}
+
+.jishi-box .search-box .search-options .layui-form .btn-box,
+.cost-box .search-box .search-options .layui-form .btn-box,
+.subscribe-box .search-box .search-options .layui-form .btn-box {
+    width: 100px;
+}
+
+.cost-box .show-info {
+    padding-right: 242px;
+}
+
+.jishiStatistic,
+.jishiCounts,
+.instruCostStatistic,
+.subscribeStatistic {
+    padding-left: 20px;
+    margin: 0 auto;
+}
+
+#jishiUseCharts,
+#jishiCountsCharts,
+#costStatisticEchart,
+#subscribeEchart {
+    width: 92vw;
+}
+
+/*# sourceMappingURL=instruStatistic.css.map */

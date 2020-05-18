@@ -1,0 +1,16 @@
+{
+  "code": 0,
+  "msg": "",
+  "count": 1,
+  "data": [
+    {
+      "id": 1,
+      "loginName": "zhangmin",
+      "userName": "张敏",
+      "credits": "--",
+      "departs": "化学院",
+      "roleName": "仪器管理员",
+      "relatedCard": "123456789"
+    }
+  ]
+}

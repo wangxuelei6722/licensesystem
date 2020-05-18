@@ -1,0 +1,33 @@
+/*表格头部以及默认样式重置*/
+.layui-card .layui-card-header {
+    padding-top: 5px;
+    box-sizing: border-box;
+}
+
+.layui-card .layui-card-header h3 {
+    font-size: 16px;
+    font-weight: 400;
+    color: #009688;
+    line-height: 30px;
+}
+
+.layui-card .layui-card-header .layui-btn {
+    height: 34px;
+    line-height: 34px;
+}
+
+.layui-card .layui-card-body .action-item {
+    margin-right: 5px;
+}
+
+/*\表格头部以及默认样式重置*/
+.search-form .layui-col-md1 {
+    margin-right: 10px;
+    width: 120px;
+}
+
+.search-form .layui-col-md1 .layui-form-item {
+    /*width:120px;*/
+}
+
+/*# sourceMappingURL=infoManage.css.map */

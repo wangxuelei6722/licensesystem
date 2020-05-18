@@ -1,0 +1,70 @@
+/*表格头部以及默认样式重置*/
+.layui-card .layui-card-header {
+    padding-top: 5px;
+    box-sizing: border-box;
+}
+
+.layui-card .layui-card-header h3 {
+    font-size: 16px;
+    font-weight: 400;
+    color: #009688;
+    line-height: 30px;
+}
+
+.layui-card .layui-card-header .layui-btn {
+    height: 34px;
+    line-height: 34px;
+}
+
+.layui-card .layui-card-body .action-item {
+    margin-right: 5px;
+}
+
+.statistic-box .content-item .layui-card .card-title {
+    font-size: 20px;
+    font-family: MicrosoftYaHei;
+    font-weight: 400;
+    color: #464646;
+    line-height: 66px;
+    text-align: center;
+    height: 66px;
+    clear: both;
+}
+
+/*机时下面所对应的统计图表*/
+.train-box .search-box .show-info {
+    padding-left: 50px;
+}
+
+.train-box .search-box .search-options {
+    padding-left: 280px;
+}
+
+.train-box .search-box .search-options .layui-form {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.train-box .search-box .search-options .layui-form .layui-col-md2 {
+    margin-right: 10px;
+}
+
+.train-box .search-box .search-options .layui-form .btn-box {
+    width: 100px;
+}
+
+.train-box .trainStatistic,
+.train-box .propertyStatistic,
+.train-box .groupCompreStatistic {
+    padding-left: 20px;
+    margin: 0 auto;
+}
+
+#trainEchart1,
+#trainEchart2,
+#propertyEchart,
+#groupCompreEchart {
+    width: 92vw;
+}
+
+/*# sourceMappingURL=trainStatistic.css.map */

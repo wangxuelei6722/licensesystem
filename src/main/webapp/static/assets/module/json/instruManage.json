@@ -1,0 +1,43 @@
+{
+  "code": 0,
+  "msg": "",
+  "count": 4,
+  "data": [
+    {
+      "id": 1,
+      "instruName": "微型高性能计算集群专用平台",
+      "instruClassify": "其他",
+      "instruDeparts": "材料科学与工程学院",
+      "instruAdmin": "仪管",
+      "instruStatus": "1",
+      "isRecomend": "是"
+    },
+    {
+      "id": 2,
+      "instruName": "微型高性能计算集群专用平台",
+      "instruClassify": "其他",
+      "instruDeparts": "材料科学与工程学院",
+      "instruAdmin": "仪管",
+      "instruStatus": "2",
+      "isRecomend": "是"
+    },
+    {
+      "id": 3,
+      "instruName": "微型高性能计算集群专用平台",
+      "instruClassify": "其他",
+      "instruDeparts": "材料科学与工程学院",
+      "instruAdmin": "仪管",
+      "instruStatus": "3",
+      "isRecomend": "是"
+    },
+    {
+      "id": 4,
+      "instruName": "微型高性能计算集群专用平台",
+      "instruClassify": "其他",
+      "instruDeparts": "材料科学与工程学院",
+      "instruAdmin": "仪管",
+      "instruStatus": "4",
+      "isRecomend": "是"
+    }
+  ]
+}

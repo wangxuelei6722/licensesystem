@@ -1,0 +1,15 @@
+{
+  "code": 0,
+  "msg": "",
+  "count": 1,
+  "data": [
+    {
+      "id": 1,
+      "consumablesName": "高锰酸钾",
+      "price": "100.00",
+      "unit": "个",
+      "createPerson": "系统",
+      "createTime": "2019-01-22 14:48:49"
+    }
+  ]
+}

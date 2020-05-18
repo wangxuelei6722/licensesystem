@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wangxl.licensesystem.dao.UsersDao">
+    <resultMap type="com.wangxl.licensesystem.pojo.Users" id="resultMap">
+        <result property="roleId"  column="roleId"/>
+
+        <association property="role" column="roleId" javaType="com.wangxl.licensesystem.pojo.Role"
+                     select="com.wangxl.licensesystem.dao.RoleDao.selectById"/>
+    </resultMap>
+    <!-- 保存一条管理员
+		保存的时候将主键设置到id上
+	 -->
+    <insert id="save" parameterType="com.wangxl.licensesystem.pojo.Users"
+            useGeneratedKeys="true" keyProperty="id" keyColumn="id">
+		insert into users
+		(roleId,nickname,password,username,salt,email,phone,loginCount,failedCount,failedTime,address,photoPath,photoName,
+		 photoSize,emailStatus,sendEmailTime,sendEmailCode,emailUuid,phoneStatus,sex,status,createTime,updateTime,lastLoginTime)
+		values
+		(#{roleId},#{nickname},#{password},#{username},#{salt},#{email},#{phone},#{loginCount},#{failedCount},#{failedTime},#{address},
+		#{photoPath},#{photoName},#{photoSize},#{emailStatus},#{sendEmailTime},#{sendEmailCode},#{emailUuid},#{phoneStatus},#{sex},
+		#{status},#{createTime},#{updateTime},#{lastLoginTime})
+	</insert>
+	<!--更新一条记录-->
+	<update id="update" parameterType="com.wangxl.licensesystem.pojo.Users">
+		update users
+		<set>
+			roleId = #{roleId},
+			<if test="nickname != null">
+				nickname=#{nickname},
+			</if>
+			<if test="password != null">
+				password = #{password},
+			</if>
+			<if test="username != null">
+				username = #{username},
+			</if>
+			<if test="salt != null">
+				salt = #{salt},
+			</if>
+			<if test="email != null">
+				email = #{email},
+			</if>
+			<if test="phone != null">
+				phone = #{phone},
+			</if>
+			<if test="loginCount != null">
+				loginCount = #{loginCount},
+			</if>
+			<if test="failedCount != null">
+				failedCount = #{failedCount},
+			</if>
+			<if test="failedTime != null">
+				failedTime = #{failedTime},
+			</if>
+			<if test="address != null">
+				address = #{address},
+			</if>
+			<if test="photoPath != null">
+				photoPath = #{photoPath},
+			</if>
+			<if test="photoName != null">
+				photoName = #{photoName},
+			</if>
+			<if test="photoSize != null">
+				photoSize = #{photoSize},
+			</if>
+			<if test="emailStatus != null">
+				emailStatus = #{emailStatus},
+			</if>
+			<if test="sendEmailTime != null">
+				sendEmailTime = #{sendEmailTime},
+			</if>
+			<if test="sendEmailCode != null">
+				sendEmailCode = #{sendEmailCode},
+			</if>
+			<if test="emailUuid != null">
+				emailUuid = #{emailUuid},
+			</if>
+			<if test="phoneStatus != null">
+				phoneStatus = #{phoneStatus},
+			</if>
+			<if test="sex != null">
+				sex = #{sex},
+			</if>
+			<if test="status != null">
+				status = #{status},
+			</if>
+			<if test="createTime != null">
+				createTime = #{createTime},
+			</if>
+			<if test="updateTime != null">
+				updateTime = #{updateTime},
+			</if>
+			<if test="lastLoginTime != null">
+				lastLoginTime = #{lastLoginTime},
+			</if>
+		</set>
+		<where>
+			id = #{id}
+		</where>
+	</update>
+	<!-- 更新多条记录 -->
+	<update id="updateBatch" parameterType="map"></update>
+	<!--根据用户名邮箱查找一条用户信息-->
+	<select id="findOne" parameterType="map" resultMap="resultMap">
+		select * from users
+		<where>
+			<choose>
+				<when test="id != null">
+					id = #{id}
+				</when>
+				<!-- 按照昵称查找 -->
+				<when test="nickname != null">
+					nickname = #{nickname}
+				</when>
+			</choose>
+		</where>
+			limit 1;
+	</select>
+	<!-- 按照id查询 -->
+	<select id="findOneById" resultType="com.wangxl.licensesystem.pojo.Users">
+		<!--
+			当木有parameterType的时候,默认为基本数据类型,#{},随便填写
+		 -->
+		select * from users where id = #{id}
+	</select>
+
+	<!-- 查询多条记录 -->
+	<select id="findList" parameterType="map" resultMap="resultMap">
+		select * from users
+		<!-- 搜索的功能 -->
+		<where>
+			<!-- 关键字搜索 -->
+			<if test="keyword != null and keyword != ''">
+				and (nickname like #{keyword} or email like #{keyword} or username like #{keyword}
+			</if>
+			<!-- 状态搜索 -->
+			<if test="status != null">
+				and status = #{status}
+			</if>
+			<!-- 时间 -->
+			<if test="stDate != null and edDate != null">
+				<![CDATA[
+					and createTime >= #{stDate} and createTime < #{edDate}
+				]]>
+			</if>
+		</where>
+
+		<!-- 排序
+			如果木有指定排序,按照默认排序
+		 -->
+		<choose>
+			<when test="orderby == 'createTimeASC'">
+				order by createTime asc
+			</when>
+			<otherwise>
+				order by updateTime desc
+			</otherwise>
+		</choose>
+	</select>
+	<!-- 删除一条记录 -->
+	<delete id="delete" parameterType="map">
+		delete from users
+		<where>
+			<choose>
+				<when test="id != null">
+					id = #{id}
+				</when>
+				<!-- 不加other,有将数据库表中的记录全部删除的风险 -->
+				<otherwise>
+					id = #{id}
+				</otherwise>
+			</choose>
+		</where>
+	</delete>
+
+
+</mapper>

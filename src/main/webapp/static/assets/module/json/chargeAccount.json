@@ -1,0 +1,16 @@
+{
+  "code": 0,
+  "msg": "",
+  "count": 1,
+  "data": [
+    {
+      "id": 1,
+      "accountName": "abc课题组付款账户",
+      "belongGroup": "abc课题组",
+      "belongUnit": "化学院",
+      "accountBalance": "-100.00",
+      "accountStatus": "正常",
+      "accountBelonging": "校外"
+    }
+  ]
+}

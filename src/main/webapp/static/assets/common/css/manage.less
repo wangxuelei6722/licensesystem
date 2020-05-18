@@ -1,0 +1,67 @@
+@import url('variables');
+/*表格头部以及默认样式重置*/
+.layui-card {
+  .layui-card-header {
+    padding-top: 5px;
+    box-sizing: border-box;
+
+    h3 {
+      font-size: 16px;
+      font-weight: 400;
+      color: @titleColor;
+      line-height: 30px;
+    }
+
+    .layui-btn {
+      height: @btnHeight;
+      line-height: @btnHeight;
+    }
+  }
+
+  .layui-card-body {
+    .action-item {
+      margin-right: 5px;
+    }
+  }
+}
+
+/*\表格头部以及默认样式重置*/
+.search-form {
+  .layui-col-md1 {
+    margin-right: 10px;
+  }
+}
+
+.isUsed-btn {
+  height: 26px;
+  line-height: 26px;
+  background: #fff;
+}
+
+.enabled-use-btn {
+  color: @btnBgcolor;
+  border: 1px solid @btnBgcolor;
+
+  &:hover {
+    color: @btnBgcolor;
+  }
+}
+
+.disabled-use-btn {
+  color: #FF5722;
+  border: 1px solid #FF5722;
+
+  &:hover {
+    color: #FF5722;
+  }
+}
+
+.stop-use-btn {
+  border: 1px solid rgba(221, 221, 221, 1);
+  background: rgba(240, 240, 240, 1);
+  color: #464646;
+
+  &:hover {
+    color: #464646;
+  }
+}

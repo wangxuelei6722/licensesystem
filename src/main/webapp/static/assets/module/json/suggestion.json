@@ -1,0 +1,23 @@
+{
+  "code": 0,
+  "msg": "",
+  "count": 1,
+  "data": [
+    {
+      "id": 1,
+      "reviewer": "张老师",
+      "reviewTitle": "质谱仪",
+      "content": "还行吧",
+      "status": "0",
+      "reviewTime": "2019-04-10 14:33"
+    },
+    {
+      "id": 2,
+      "reviewer": "李老师",
+      "reviewTitle": "质谱仪",
+      "content": "还行吧",
+      "status": "1",
+      "reviewTime": "2019-04-10 14:33"
+    }
+  ]
+}
